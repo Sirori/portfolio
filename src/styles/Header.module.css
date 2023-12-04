@@ -1,0 +1,15 @@
+header {
+  @apply top-0 left-0 right-0 flex justify-between;
+}
+
+.hoverCircle {
+  @apply after:absolute after:top-[-15%] after:left-[-25%] after:w-[150%] after:h-[130%] after:bg-[#A2D4C7] after:px-[5%] after:py-[5%] after:rounded-full after:z-[-1] after:opacity-0 hover:after:opacity-80;
+}
+
+.hoverCircle::after {
+  transition: all 0.3s;
+}
+
+.underlineLink {
+  @apply hover:underline;
+}
