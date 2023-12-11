@@ -23,10 +23,10 @@ function HorizonContents() {
   }
 
   return () => {
-    if (scrollContainer) {
-      scrollContainer.removeEventListener("wheel", handleWheel);
-    }
-  };
+      if (scrollContainer) {
+        scrollContainer.removeEventListener("wheel", handleWheel);
+      }
+    };
   }, []);
   
   return (
