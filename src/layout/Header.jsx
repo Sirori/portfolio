@@ -10,13 +10,13 @@ function Header() {
 		<header className={S.header}>
       <nav className="text-lg">
         <ul>
-          <li className={`${S.hoverCircle} fixed top-[4%] left-[3%]`}>
-            <Link to={`/about`}>
+          <li className={`${S.hoverCircle} fixed top-[4%] left-[3%] px-[0.5%]`}>
+            <Link to="about">
               ABOUT
             </Link>
           </li>
-          <li className={`${S.hoverCircle} fixed top-[4%] right-[3%]`}>
-            <Link to={`/works`}>
+          <li className={`${S.hoverCircle} fixed top-[4%] right-[3%] px-[0.5%]`}>
+            <Link to="works">
               WORKS
             </Link>
           </li>
