@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import S from "./Home.module.css"
 import mainImage from "/assets/image/mainImg.png"
 
 function Main() {
-  const { ref: pageRef, inView: pageIsVisible /* entry */ } = useInView();
+  const { ref: pageRef, inView: pageIsVisible } = useInView();
   return(
     <>
       <main className={S.main}>
