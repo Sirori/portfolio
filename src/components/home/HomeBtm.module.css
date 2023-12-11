@@ -1,0 +1,103 @@
+.whoBox {
+  @apply px-[7%] py-[7%] w-screen h-auto flex flex-row justify-between;
+}
+
+.whoTextBox {
+  @apply flex flex-col h-[80vh] w-[50%] justify-between;
+}
+
+.whoTitle {
+  @apply font-garamond text-[7.5rem] font-medium mt-[5%];
+}
+
+.titleAni {
+  animation-name: slideUp;
+  animation-duration: 1.3s;
+}
+
+.contentBox {
+  @apply flex flex-col opacity-0;
+}
+
+.contentAni {
+  animation-name: slideUp;
+  animation-duration: 1.3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.whoMore {
+  @apply font-garamond text-[1.5rem] text-right mb-[5%];
+}
+
+.whoContent {
+  @apply font-notoKR text-[1.6rem] font-normal;
+}
+
+.whoImgBox {
+  @apply w-[30%] h-auto overflow-hidden self-center;
+}
+
+.imgAni {
+  animation-name: slideUp;
+  animation-duration: 1s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.page {
+  width: 50vw;
+  height: 50vh;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  scroll-snap-align: start;
+  background: skyblue;
+  padding: 5%;
+}
+
+.scrollContainer {
+  overflow-x: scroll;
+  display: flex;
+  -ms-overflow-style: none;
+  gap: 40vw;
+}
+
+.verticalScrollContainer {
+  @apply overflow-y-scroll;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.horizontal {
+  @apply relative w-screen h-[120vh] flex justify-center items-center overflow-x-visible;
+}
+
+.horizontalContent {
+  min-width: 40vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
