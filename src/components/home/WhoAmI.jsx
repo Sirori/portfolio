@@ -1,6 +1,6 @@
 import S from "./HomeBtm.module.css"
 import whoImage from "/assets/image/whoAmI.png"
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
 function WhoAmI() {
