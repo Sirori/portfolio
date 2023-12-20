@@ -49,3 +49,66 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+.swiper .swiper-wrapper {
+  align-items: center;
+}
+
+/* .swiper .swiper-slide-active {
+  height: 40vh !important;
+  width: 50vw !important;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+} */
+
+/* .swiper-slide-prev,
+.swiper-slide-next {
+  height: 30vh !important;
+  width: 40vw !important;
+} */
+
+.swiper-slide img {
+  height: 200px;
+}
+
+.swiper .swiper-wrapper .swiper-slide-active {
+  width: 50rem !important;
+}
+
+.swiper-slide-active img {
+  height: 30rem;
+  width: 50rem;
+}
+
+.swiper-slide-prev a,
+.swiper-slide-next a {
+  max-height: 300px;
+  height: 300px;
+}
+
+.swiper-slide-prev img,
+.swiper-slide-next img {
+  height: 350px;
+}
+
+.swiper .swiper-button-prev:after,
+.swiper .swiper-button-next:after {
+  content: "";
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  z-index: 999;
+}
+
+.swiper .swiper-button-prev {
+  background: url(/assets/icon/chevron.svg) no-repeat center center / contain;
+  rotate: -90deg;
+}
+
+.swiper .swiper-button-next {
+  background: url(/assets/icon/chevron.svg) no-repeat center center / contain;
+  rotate: 90deg;
+}

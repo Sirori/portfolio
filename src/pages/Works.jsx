@@ -1,12 +1,15 @@
 import Spinner from "./../components/Spinner";
 import { useState } from "react";
+import Projects from '../components/works/Projects';
+import Photoshop from '../components/works/Photoshop';
 
 function Works(){
   const [isLoading, setIsLoading] = useState(true);
   return (
-    <section className="w-screen h-screen bg-purple-200">
-
-    </section>
+    <div className="relative">
+      <Projects />
+      <Photoshop />
+    </div>
   )
 }
 
