@@ -27,7 +27,11 @@
 }
 
 .whoMore {
-  @apply font-garamond text-[1.5rem] text-right mb-[5%];
+  @apply font-garamond text-[1.5rem] text-right mb-[5%] duration-200;
+}
+
+.whoMore:hover {
+  transform: translateY(-15%);
 }
 
 .whoContent {
