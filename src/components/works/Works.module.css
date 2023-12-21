@@ -22,6 +22,10 @@
   @apply max-h-[200px] w-auto;
 }
 
+.swiperImg {
+  @apply w-full h-full object-cover;
+}
+
 .photoshop {
   @apply px-[5%] pt-[5%] pb-[7%] w-screen;
 }

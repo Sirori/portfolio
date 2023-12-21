@@ -34,12 +34,12 @@ function Projects() {
         effect={"coverflow"}
         coverflowEffect={{
           rotate: 0,
-          stretch: 150,
+          stretch: 200,
           depth: 0,
           modifier: 5,
           slideShadows : false,
         }}
-        slideToClickedSlide={true}
+        slideToClickedSlide={false}
         navigation={{
           prevEl: ".swiper-button-next",
           nextEl: ".swiper-button-prev",
@@ -48,27 +48,27 @@ function Projects() {
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
           <SwiperSlide className={S.swiperItem}>
-            <Link className={S.swiperLink}>
+            <Link className={`swiperLink ${S.swiperLink}`}>
               <img className={S.swiperImg} src={karlyMain} alt="마켓컬리 클론코딩" />
             </Link>
           </SwiperSlide>
           <SwiperSlide className={S.swiperItem}>
-            <Link className={S.swiperLink}>
+            <Link className={`swiperLink ${S.swiperLink}`}>
               <img className={S.swiperImg} src={gimpoMain} alt="김포밝은안과 클론코딩" />
             </Link>
           </SwiperSlide>
           <SwiperSlide className={S.swiperItem}>
-            <Link className={S.swiperLink}>
+            <Link className={`swiperLink ${S.swiperLink}`}>
               <img className={S.swiperImg} src={taingMain} alt="티빙 클론코딩" />
             </Link>
           </SwiperSlide>
           <SwiperSlide className={S.swiperItem}>
-            <Link className={S.swiperLink}>
+            <Link className={`swiperLink ${S.swiperLink}`}>
               <img className={S.swiperImg} src={jinheungMain} alt="진흥기업 리팩토링" />
             </Link>
           </SwiperSlide>
           <SwiperSlide className={S.swiperItem}>
-            <Link className={S.swiperLink}>
+            <Link className={`swiperLink ${S.swiperLink}`}>
               <img className={S.swiperImg} src={netspaMain} alt="넷스파 클론코딩" />
             </Link>
           </SwiperSlide>
