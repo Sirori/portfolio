@@ -15,6 +15,13 @@ function Header() {
               ABOUT
             </Link>
           </li>
+          <li className="fixed top-[3%] left-1/2 -translate-x-1/2 z-50">
+            <Link to="/">
+              <h1 className={S.logo}>
+                <span className={S.logoText}>home</span>
+              </h1>
+            </Link>
+          </li>
           <li className={`${S.hoverCircle} fixed top-[4%] right-[3%] px-[0.5%] z-10`}>
             <Link to="works">
               WORKS
