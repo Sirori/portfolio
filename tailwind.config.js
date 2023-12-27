@@ -9,8 +9,8 @@ export default {
         "noto": ['"Noto Sans", sans-serif'],
         "notoKR": ['"Noto Sans KR", sans-serif'],
         "montserrat": ['"Montserrat", sans-serif'],
-        "garamond": ['"Cormorant Garamond"', 'serif']
-
+        "garamond": ['"Cormorant Garamond"', 'serif'],
+        "ogg": ["Ogg"]
       },
     },
   },
