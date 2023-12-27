@@ -7,7 +7,7 @@
 }
 
 .whoTitle {
-  @apply font-garamond text-[7.5rem] font-medium mt-[5%];
+  @apply font-ogg text-[7.5rem] font-medium mt-[5%];
 }
 
 .titleAni {

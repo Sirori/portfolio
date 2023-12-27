@@ -12,7 +12,7 @@ function Footer() {
 
 	return (
 		<footer className="bg-black w-full h-screen text-center text-white py-[10%] flex flex-col overflow-hidden">
-      <p className="text-[6rem] mb-[5%]">
+      <p className="text-[6.5rem] mb-[5%] font-ogg">
 				Contact me !
 			</p>
 			<span className="text-[1.75rem] mb-[1%]">
