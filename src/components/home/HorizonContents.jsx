@@ -1,11 +1,11 @@
 import { useRef, useEffect } from "react";
 import S from "./HomeBtm.module.css";
 import { Link } from "react-router-dom";
-import gimpo from "/assets/image/gimpoMain.png"
-import jinheung from "/assets/image/jinheungMain.png"
-import karly from "/assets/image/karlyMain.png"
-import netspa from "/assets/image/netspaMain.png"
-import taing from "/assets/image/taingMain.png"
+import gimpo from "./../../assets/image/gimpoMain.webp"
+import jinheung from "./../../assets/image/jinheungMain.webp"
+import karly from "./../../assets/image/karlyMain.webp"
+import netspa from "./../../assets/image/netspaMain.webp"
+import taing from "./../../assets/image/taingMain.webp"
 
 function HorizonContents() {
   const scrollContainerRef = useRef(null);

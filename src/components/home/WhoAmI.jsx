@@ -1,5 +1,5 @@
 import S from "./HomeBtm.module.css"
-import whoImage from "/assets/image/whoAmI.png"
+import whoImage from "./../../assets/image/whoAmI.webp"
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 

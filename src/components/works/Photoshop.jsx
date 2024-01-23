@@ -1,11 +1,11 @@
 import { useState } from "react";
 import ReactDOM from "react-dom";
 import S from "./Works.module.css"
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import photoshop1 from "./../../assets/image/photoshop1.png";
-import photoshop2 from "./../../assets/image/photoshop2.png";
-import illustrator from "./../../assets/image/illustrator.png";
+import photoshop1 from "./../../assets/image/photoshop1.webp";
+import photoshop2 from "./../../assets/image/photoshop2.webp";
+import illustrator from "./../../assets/image/illustrator.webp";
 
 function Modal({ isOpen, onClose, selectedImage }) {
   if (!isOpen || !selectedImage) return null;

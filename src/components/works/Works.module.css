@@ -19,7 +19,7 @@
 }
 
 .swiperLink {
-  @apply max-h-[200px] w-auto;
+  @apply max-h-[200px] w-auto overflow-hidden;
 }
 
 .swiperImg {

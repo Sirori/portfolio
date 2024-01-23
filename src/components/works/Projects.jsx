@@ -1,26 +1,46 @@
 import S from "./Works.module.css"
-import { useRef, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
-
-import karlyMain from "./../../assets/image/karlyMain.png"
-import taingMain from "./../../assets/image/taingMain.png"
-import gimpoMain from "./../../assets/image/gimpoMain.png"
-import netspaMain from "./../../assets/image/netspaMain.png"
-import jinheungMain from "./../../assets/image/jinheungMain.png"
+import pb from "./../../api/pocketbase";
+import { getPbImageURL } from "../../hooks/getPbImageUrl";
 
 function Projects() {
   const swiperRef = useRef(null);
+  const [contents, setContents] = useState([]);
+	const [status, setStatus] = useState("pending");
+	const [error, setError] = useState(null);
+  const { id } = useParams();
 
   useEffect(() => {
     if (swiperRef.current) {
       swiperRef.current.navigation.update();
     }
   }, []);
+
+	useEffect(() => {
+		setStatus("loading");
+
+		Promise.all([
+			pb.collection("project").getFullList(),
+		])
+			.then(([project]) => {
+				setContents([
+					{ title: "프로젝트", data: project }
+				]);
+				setStatus("success");
+			})
+			.catch((error) => {
+				setError(error);
+				setStatus("error");
+			});
+	}, [id]);
+
   return (
     <section className={S.projects}>
       <h2 className={S.worksTitle}>Works</h2>
@@ -47,31 +67,17 @@ function Projects() {
         modules={[Navigation, EffectCoverflow]}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
-          <SwiperSlide className={S.swiperItem}>
-            <Link className={`swiperLink ${S.swiperLink}`}>
-              <img className={S.swiperImg} src={karlyMain} alt="마켓컬리 클론코딩" />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className={S.swiperItem}>
-            <Link className={`swiperLink ${S.swiperLink}`}>
-              <img className={S.swiperImg} src={gimpoMain} alt="김포밝은안과 클론코딩" />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className={S.swiperItem}>
-            <Link className={`swiperLink ${S.swiperLink}`}>
-              <img className={S.swiperImg} src={taingMain} alt="티빙 클론코딩" />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className={S.swiperItem}>
-            <Link className={`swiperLink ${S.swiperLink}`}>
-              <img className={S.swiperImg} src={jinheungMain} alt="진흥기업 리팩토링" />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide className={S.swiperItem}>
-            <Link className={`swiperLink ${S.swiperLink}`}>
-              <img className={S.swiperImg} src={netspaMain} alt="넷스파 클론코딩" />
-            </Link>
-          </SwiperSlide>
+          {contents?.map((contentCategory)=>
+            contentCategory.data?.map((item)=>(
+              <>
+                <SwiperSlide key={item.id} className={S.swiperItem}>
+                  <Link to={`/detail/${item.id}`} className={`swiperLink ${S.swiperLink}`}>
+                    <img className={S.swiperImg} src={getPbImageURL(item, "mainImage")} alt={`${item.title} 클론코딩`} />
+                  </Link>
+                </SwiperSlide>
+              </>
+            ))
+          )}
           <div className="swiper-button-prev"></div>
           <div className="swiper-button-next"></div>
         </Swiper>
