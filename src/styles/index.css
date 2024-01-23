@@ -59,20 +59,6 @@ button {
   align-items: center;
 }
 
-/* .swiper .swiper-slide-active {
-  height: 40vh !important;
-  width: 50vw !important;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-} */
-
-/* .swiper-slide-prev,
-.swiper-slide-next {
-  height: 30vh !important;
-  width: 40vw !important;
-} */
-
 .swiper-slide img {
   height: 200px;
 }
