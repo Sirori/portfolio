@@ -74,30 +74,3 @@
   background: skyblue;
   padding: 5%;
 }
-
-.scrollContainer {
-  overflow-x: scroll;
-  display: flex;
-  -ms-overflow-style: none;
-  gap: 40vw;
-}
-
-.verticalScrollContainer {
-  @apply overflow-y-scroll;
-}
-
-.scrollContainer::-webkit-scrollbar {
-  @apply hidden;
-}
-
-.horizontal {
-  @apply relative w-screen h-[120vh] flex justify-center items-center overflow-x-visible;
-}
-
-.horizontalContent {
-  min-width: 40vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
