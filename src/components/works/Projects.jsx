@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import pb from "./../../api/pocketbase";
-import { getPbImageURL } from "../../hooks/getPbImageUrl";
+import { getPbImageURL } from "./../../hooks/getPbImageURL";
 
 function Projects() {
   const swiperRef = useRef(null);
