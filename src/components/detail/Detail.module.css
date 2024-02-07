@@ -31,7 +31,7 @@
 }
 
 .blockBox {
-  @apply w-[45%] mt-[3%] flex flex-row justify-between;
+  @apply w-[56%] mt-[3%] flex flex-row justify-between;
 }
 
 .txtContent {
