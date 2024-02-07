@@ -19,7 +19,7 @@ function Works(){
 				<meta property="og:description" content="양시연 2024 프론트엔드/웹 퍼블리셔 포트폴리오" />
 				<meta
 					property="og:url"
-					content=""
+					content="https://sirori.netlify.app/#/works"
 				/>
 			</Helmet>
       <div className="relative">
