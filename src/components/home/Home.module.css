@@ -1,5 +1,5 @@
 .main {
-  @apply flex flex-row items-end justify-between pl-[10%] pr-[13%] select-none h-[90vh] pb-[5%];
+  @apply flex flex-row items-end justify-between pl-[10%] pr-[13%] select-none h-[100vh] pb-[5%];
 }
 
 .mainImgBox {
