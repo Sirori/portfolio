@@ -163,7 +163,7 @@
 }
 
 .skills {
-  @apply relative w-screen h-[100vh] px-[5%] pt-[8%] select-none;
+  @apply relative w-screen h-[100vh] px-[5%] py-[8%] select-none;
 }
 
 .circleLg {
