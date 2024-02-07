@@ -10,6 +10,20 @@
   gap: 40vw;
 }
 
+.scrollContainer::before {
+  @apply absolute font-ogg text-[7rem] left-[35%] top-[25%];
+  content: "Works";
+}
+
+.scrollContainer::after {
+  @apply absolute font-ogg text-[7rem] left-[50%] top-[35%];
+  content: "Gallery";
+}
+
+.scrollContainer.overlap {
+  color: white; /* 이미지와 겹칠 때 텍스트 색상 */
+}
+
 .horizontalContent {
   min-width: 40vw;
   height: auto;
