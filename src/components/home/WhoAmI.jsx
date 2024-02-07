@@ -16,7 +16,7 @@ function WhoAmI() {
         <div ref={pageRef} className={`${S.contentBox} ${
             pageIsVisible ? S.contentAni : ""
           }`}>
-          <Link to="about" className={`${S.whoMore}`}>
+          <Link to="about" className={S.whoMore}>
             see more &#62; &#62;
           </Link>
           <p className={`${S.whoContent}`}>
