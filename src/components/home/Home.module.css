@@ -39,7 +39,7 @@
 }
 
 .creative {
-  @apply text-[9.5rem] text-center font-montserrat leading-[12rem];
+  @apply text-[9.5rem] text-center font-ogg leading-[12rem];
 }
 
 @keyframes slideUp {

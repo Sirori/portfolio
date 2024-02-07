@@ -1,0 +1,67 @@
+.detail {
+  @apply px-[5%] py-[7%];
+}
+
+.titleBox {
+  @apply mt-[2%] flex flex-row justify-between;
+}
+
+.title {
+  @apply font-notoKR text-[2.5rem];
+}
+
+.goBack {
+  @apply bg-transparent float-right flex flex-row gap-2 cursor-pointer text-[1.25rem] h-[80%];
+}
+
+.detailMain {
+  @apply mt-[3%] flex flex-row gap-[5%];
+}
+
+.imgContainer {
+  @apply w-[55%];
+}
+
+.mainImg {
+  @apply w-full h-full;
+}
+
+.txtContainer {
+  @apply h-[80%] self-end flex flex-col w-[38%];
+}
+
+.blockBox {
+  @apply w-[45%] mt-[3%] flex flex-row justify-between;
+}
+
+.txtContent {
+  @apply mt-[3%] text-[1.125rem];
+}
+
+.fullSection {
+  @apply w-full h-auto px-[5%] py-[6%] flex flex-row justify-between flex-wrap;
+}
+
+.fullImg {
+  @apply w-full h-auto px-[5%] py-[6%] flex flex-row justify-center;
+}
+
+.detailContainer,
+.detailContainer2,
+.detailContainer3,
+.detailContainer4 {
+  @apply w-[48%];
+}
+
+.detailContainer3,
+.detailContainer4 {
+  @apply mt-[3%];
+}
+
+.oneFull {
+  @apply w-[80%];
+}
+
+.detailTitle {
+  @apply inline-block text-[2rem] mb-3 bg-slate-400 bg-opacity-50 p-2 rounded-full;
+}

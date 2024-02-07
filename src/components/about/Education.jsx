@@ -1,7 +1,7 @@
 import S from "./About.module.css"
 import { useInView } from "react-intersection-observer";
-import likeLion from "./../../assets/image/likeLion.jpeg"
-import ezen from "./../../assets/image/ezen.jpeg"
+import likeLion from "./../../assets/image/likeLion.webp"
+import ezen from "./../../assets/image/ezen.webp"
 
 function Education(){
   const { ref: pageRef, inView: pageIsVisible } = useInView();

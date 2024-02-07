@@ -7,7 +7,7 @@
 }
 
 .whoTitle {
-  @apply font-garamond text-[7.5rem] font-medium mt-[5%];
+  @apply font-ogg text-[7.5rem] font-medium mt-[5%];
 }
 
 .titleAni {
@@ -27,7 +27,7 @@
 }
 
 .whoMore {
-  @apply font-garamond text-[1.5rem] text-right mb-[5%];
+  @apply font-garamond text-[1.5rem] text-right mb-[5%] hover:translate-x-3 duration-200;
 }
 
 .whoContent {
@@ -73,31 +73,4 @@
   scroll-snap-align: start;
   background: skyblue;
   padding: 5%;
-}
-
-.scrollContainer {
-  overflow-x: scroll;
-  display: flex;
-  -ms-overflow-style: none;
-  gap: 40vw;
-}
-
-.verticalScrollContainer {
-  @apply overflow-y-scroll;
-}
-
-.scrollContainer::-webkit-scrollbar {
-  @apply hidden;
-}
-
-.horizontal {
-  @apply relative w-screen h-[120vh] flex justify-center items-center overflow-x-visible;
-}
-
-.horizontalContent {
-  min-width: 40vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

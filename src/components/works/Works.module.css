@@ -1,0 +1,66 @@
+.projects {
+  @apply h-[110vh] w-screen px-[5%] py-[4%];
+}
+
+.worksTitle {
+  @apply font-actor mb-[1rem] text-[7rem] select-none;
+}
+
+.projectContainer {
+  @apply w-full;
+}
+
+.projectTitle {
+  @apply font-actor text-[3.5rem] font-thin select-none;
+}
+
+.swiper {
+  @apply mt-[5%];
+}
+
+.swiperLink {
+  @apply max-h-[200px] w-auto overflow-hidden;
+}
+
+.swiperImg {
+  @apply w-full h-full object-cover;
+}
+
+.photoshop {
+  @apply px-[5%] pt-[5%] pb-[7%] w-screen;
+}
+
+.photoshopList {
+  @apply pt-[3%] px-[2%] flex flex-row flex-wrap justify-between;
+}
+
+.photoshopItem {
+  @apply cursor-pointer relative mb-[3%];
+}
+
+.photoshopItem::after {
+  @apply absolute left-1/2 top-1/2 w-[3rem] h-[3rem] opacity-0 hover:opacity-100 duration-300;
+  background: url("./../../assets/icon/magnifying-glass.svg") no-repeat center
+    center / contain;
+  content: "";
+  transform: translate(-50%);
+}
+
+.photoshopItem::before {
+  @apply absolute bg-black opacity-0 left-0 top-0 w-full h-full hover:opacity-70 duration-300;
+  content: "";
+}
+
+.modal {
+  @apply fixed w-full h-full duration-150 top-0 left-0;
+}
+
+.modalImageContainer {
+  @apply absolute w-full h-full left-0 top-0 bg-black opacity-80;
+}
+
+.modalImage {
+  @apply absolute left-1/2 top-1/2 h-[60vh] w-auto;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
