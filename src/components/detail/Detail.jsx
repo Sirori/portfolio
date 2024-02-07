@@ -2,7 +2,7 @@ import S from "./Detail.module.css"
 import FeatureBlock from "./../common/FeatureBlock";
 import pb from "./../../api/pocketbase";
 import React, { useEffect, useState } from "react";
-import { getPbImageURL } from "../../hooks/getPbImageUrl";
+import { getPbImageURL } from "./../../hooks/getPbImageURL";
 
 import backIcon from "./../../assets/icon/backIcon.svg"
 
