@@ -122,20 +122,23 @@
 
 ### 페이지 소개 :pencil:
 #### 메인페이지
-![665DDD09-4E51-4FFA-9873-C1AA2C1C5190_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/7e85761a-569e-4bbc-aad7-8c998a2c224f)
+![665DDD09-4E51-4FFA-9873-C1AA2C1C5190_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/e0fa1649-02dc-427e-b291-a53a02dc0d19)
+
 
 - css 애니메이션을 사용하였습니다.
 - pocketbase를 통해 데이터를 받아와 x축 스크롤 애니메이션을 구현하였습니다.
 
 #### about페이지
-![356936DE-009E-4B89-BE6E-97BD74277AC2_4_5005_c](https://github.com/Sirori/portfolio/assets/116864776/37869c1d-af2e-4d8b-bd11-8334d458fcb4)
+![356936DE-009E-4B89-BE6E-97BD74277AC2_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/7dcbd890-074f-4bf5-a8d5-0f982213733d)
+
 
 - block이라는 컴포넌트를 조립하여 사용하였습니다.
 - 마찬가지로 css 애니메이션을 활용하였습니다.
 
 
 #### works페이지
-![7D818E74-BC0F-4052-BBE6-D05574BF1811_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/d01e4ee2-58d9-4985-a134-0c2fcc905050)
+![7D818E74-BC0F-4052-BBE6-D05574BF1811_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/8b10243f-f999-4ea1-9171-c7ba18def43a)
+
 - swiper를 사용하여 작업물을 보기 편하게 구현하였습니다.
 - swiper의 coverflow 이펙트를 사용하였습니다.
 - 작업물들의 데이터는 pocketbase에서 생성하여 데이터를 불러옵니다.
@@ -143,7 +146,8 @@
 
 
 #### detail페이지
-![79CE616B-55BF-4121-BF0D-74A99829B7AE_4_5005_c](https://github.com/Sirori/portfolio/assets/116864776/add74e7d-33ab-40f7-a496-337c9ecd01ea)
+![79CE616B-55BF-4121-BF0D-74A99829B7AE_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/44cd35a9-b3e3-43b5-999a-b6509e9abb4b)
+
 
 - pocketbase에 입력된 정보들을 Detail.jsx에서 지정한 레이아웃대로 출력되도록 하였습니다.
 - javascript를 사용하여 back 버튼을 활성화하였습니다.
