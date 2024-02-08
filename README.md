@@ -122,22 +122,22 @@
 
 ### 페이지 소개 :pencil:
 #### 메인페이지
-![665DDD09-4E51-4FFA-9873-C1AA2C1C5190_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/e0fa1649-02dc-427e-b291-a53a02dc0d19)
+![화면 기록 2024-02-08 오후 2 11 27](https://github.com/Sirori/portfolio/assets/116864776/3ca36d85-2795-4734-a7a7-491cdc0f3a5e)
 
 
 - css 애니메이션을 사용하였습니다.
 - pocketbase를 통해 데이터를 받아와 x축 스크롤 애니메이션을 구현하였습니다.
 
 #### about페이지
-![356936DE-009E-4B89-BE6E-97BD74277AC2_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/7dcbd890-074f-4bf5-a8d5-0f982213733d)
-
+![화면 기록 2024-02-08 오후 2 12 58](https://github.com/Sirori/portfolio/assets/116864776/6c53d4a8-3abe-46f0-9860-4bf9c3f353cd)
 
 - block이라는 컴포넌트를 조립하여 사용하였습니다.
 - 마찬가지로 css 애니메이션을 활용하였습니다.
 
 
 #### works페이지
-![7D818E74-BC0F-4052-BBE6-D05574BF1811_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/8b10243f-f999-4ea1-9171-c7ba18def43a)
+![화면 기록 2024-02-08 오후 2 12 33](https://github.com/Sirori/portfolio/assets/116864776/d6e87d16-5572-4c1d-ac0d-b517c65bc075)
+
 
 - swiper를 사용하여 작업물을 보기 편하게 구현하였습니다.
 - swiper의 coverflow 이펙트를 사용하였습니다.
@@ -146,12 +146,33 @@
 
 
 #### detail페이지
-![79CE616B-55BF-4121-BF0D-74A99829B7AE_1_102_o](https://github.com/Sirori/portfolio/assets/116864776/44cd35a9-b3e3-43b5-999a-b6509e9abb4b)
+![화면 기록 2024-02-08 오후 2 25 57](https://github.com/Sirori/portfolio/assets/116864776/e4649988-29bb-4ff0-b8e3-54c8e3f05e60)
 
 
 - pocketbase에 입력된 정보들을 Detail.jsx에서 지정한 레이아웃대로 출력되도록 하였습니다.
 - javascript를 사용하여 back 버튼을 활성화하였습니다.
 - flex를 적극 사용하였습니다.
+
+#### lighthouse 검사
+- 메인페이지
+<img width="549" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/ac56997c-6a5c-4453-8415-07dee2977585">
+
+- about페이지
+<img width="546" alt="스크린샷 2024-02-08 오후 3 01 19" src="https://github.com/Sirori/portfolio/assets/116864776/9a6e03cd-8f92-4441-9bcd-7b8db898f53d">
+
+- works페이지
+<img width="545" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/77db1c97-e715-4c9e-aa22-8d92981f6913">
+
+- detail페이지
+<img width="541" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/559ffe82-14cb-4571-a851-cf17a8a1f618">
+(타잉)
+<img width="546" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/06ff64e0-8552-4e4d-9842-527f34f6ca9b">
+(넷스파)
+
+전체적으로 pocketbase를 사용한 페이지들은 데이터를 불러오는 데에 performance 점수가 낮습니다. 더 고민하고 개선하도록 하겠습니다.
+
+
+
 
 
 ### 회고 :raising_hand:
