@@ -42,8 +42,8 @@ dependencies:
     specifier: ^1.6.6
     version: 1.6.6(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
   swiper:
-    specifier: ^11.0.4
-    version: 11.0.4
+    specifier: ^11.0.6
+    version: 11.0.6
 
 devDependencies:
   '@types/react':
@@ -2693,8 +2693,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /swiper@11.0.4:
-    resolution: {integrity: sha512-qtUxILrD4aD++rpKzGrkz3IAWL92f9uTrDwjb6HaNLmPvJhZCE/83DL+9w4kIgDDJeF6QKalV47rMBN77UOVYQ==}
+  /swiper@11.0.6:
+    resolution: {integrity: sha512-W/Me7MQl5rNgdM5x9i3Gll76WsyVpnHn91GhBOyL7RCFUeg62aVnflzlVfIpXzZ/87FtJOfAoDH79ZH2Yq76zA==}
     engines: {node: '>= 4.7.0'}
     dev: false
 
