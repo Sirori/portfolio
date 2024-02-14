@@ -60,7 +60,7 @@ function HorizonContents() {
   }, [id]);
 
   return (
-    <section className={S.horizontal}>
+    <section className={`horizontal ${S.horizontal}`}>
       <div className={S.verticalScrollContainer}>
         <div className={S.scrollContainer} ref={scrollContainerRef}>
           {contents?.map((contentCategory) =>
