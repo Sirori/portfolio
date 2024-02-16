@@ -39,7 +39,6 @@ function HorizonContents() {
     };
   }, []);
 
-  // pb데이터 가져오기
   const [contents, setContents] = useState([]);
   const [status, setStatus] = useState('pending');
   const [error, setError] = useState(null);
@@ -61,7 +60,6 @@ function HorizonContents() {
 
   return (
     <section className={`horizontal ${S.horizontal}`}>
-      <div className={S.verticalScrollContainer}>
         <div className={S.scrollContainer} ref={scrollContainerRef}>
           {contents?.map((contentCategory) =>
             contentCategory.data?.map((item) => (
@@ -77,7 +75,6 @@ function HorizonContents() {
             ))
           )}
         </div>
-      </div>
     </section>
   );
 }

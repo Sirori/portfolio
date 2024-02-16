@@ -3,7 +3,7 @@
 }
 
 .scrollContainer {
-  height: 80%;
+  height: 100%;
   overflow-x: scroll;
   display: flex;
   -ms-overflow-style: none;
@@ -11,12 +11,12 @@
 }
 
 .scrollContainer::before {
-  @apply absolute font-ogg text-[7rem] left-[35%] top-[25%];
+  @apply absolute font-ogg text-[7rem] left-[35%] top-[37%];
   content: "Works";
 }
 
 .scrollContainer::after {
-  @apply absolute font-ogg text-[7rem] left-[50%] top-[35%];
+  @apply absolute font-ogg text-[7rem] left-[50%] top-[50%];
   content: "Gallery";
 }
 
