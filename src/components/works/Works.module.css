@@ -71,8 +71,8 @@
 
 .photoshopItem::after {
   @apply absolute left-1/2 top-1/2 w-[3rem] h-[3rem] opacity-0 hover:opacity-100 duration-300;
-  background: url("./../../assets/icon/magnifying-glass.svg") no-repeat center
-    center / contain;
+  background: url("/assets/icon/magnifying-glass.svg") no-repeat center center /
+    contain;
   content: "";
   transform: translate(-50%);
 }

@@ -1,8 +1,8 @@
 import S from "./../styles/Footer.module.css";
 import { Link } from "react-router-dom";
 
-import mailIcon from "./../assets/icon/mailIcon.svg"
-import phoneIcon from "./../assets/icon/phoneIcon.svg"
+import mailIcon from "/assets/icon/mailIcon.svg"
+import phoneIcon from "/assets/icon/phoneIcon.svg"
 
 function Footer() {
 	const handleMailClick = () => {

@@ -1,5 +1,5 @@
 import S from "./About.module.css"
-import aboutPhoto from "./../../assets/image/aboutme.webp"
+import aboutPhoto from "/assets/image/aboutme.webp"
 import FeatureBlock from "./../common/FeatureBlock"
 
 function AboutMain(){

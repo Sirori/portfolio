@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import S from "./Home.module.css"
-import mainImage from "./../../assets/image/mainImg.webp"
+import mainImage from "/assets/image/mainImg.webp"
 
 function Main() {
   const { ref: pageRef, inView: pageIsVisible } = useInView();

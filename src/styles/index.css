@@ -69,8 +69,7 @@ button {
 
 .projects .swiper .swiper-button-prev::after,
 .projects .swiper .swiper-button-next::after {
-  background: url(./../assets/icon/chevron.svg) no-repeat center center /
-    contain;
+  background: url(/assets/icon/chevron.svg) no-repeat center center / contain;
   content: "";
   width: 50%;
   height: 100%;

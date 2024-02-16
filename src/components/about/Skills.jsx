@@ -1,12 +1,12 @@
 import S from "./About.module.css"
 import { useInView } from "react-intersection-observer";
-import html from "./../../assets/icon/html.svg"
-import css from "./../../assets/icon/css.svg"
-import js from "./../../assets/icon/js.svg"
-import xd from "./../../assets/icon/xd.svg"
-import figma from "./../../assets/icon/figma.svg"
-import jquery from "./../../assets/icon/jquery.svg"
-import react from "./../../assets/icon/react.svg"
+import html from "/assets/icon/html.svg"
+import css from "/assets/icon/css.svg"
+import js from "/assets/icon/js.svg"
+import xd from "/assets/icon/xd.svg"
+import figma from "/assets/icon/figma.svg"
+import jquery from "/assets/icon/jquery.svg"
+import react from "/assets/icon/react.svg"
 
 function Skills(){
   const { ref: pageRef, inView: pageIsVisible } = useInView();
