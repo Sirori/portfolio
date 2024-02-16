@@ -1,9 +1,9 @@
+import { Helmet } from "react-helmet-async";
+import React, { useEffect, useState } from "react";
 import S from "./Detail.module.css"
 import FeatureBlock from "./../common/FeatureBlock";
 import pb from "./../../api/pocketbase";
-import React, { useEffect, useState } from "react";
 import { getPbImageURL } from "./../../hooks/getPbImageURL";
-
 import backIcon from "./../../assets/icon/backIcon.svg"
 
 function Detail(){
@@ -34,12 +34,26 @@ function Detail(){
 	}, []);
 
   return (
-  <>
+    <>
       {contents?.map((contentCategory) =>
         contentCategory.data
           .filter((item) => item.id === window.location.href.slice(-15))
           .map((item) => (
             <React.Fragment key={item.id}>
+              <Helmet>
+                <title>양시연 2024 프론트엔드/웹 퍼블리셔 포트폴리오</title>
+                <meta property="title" content="포트폴리오 상세페이지" />
+                <meta
+                  name="description"
+                  content="양시연 2024 프론트엔드/웹 퍼블리셔 포트폴리오 상세페이지"
+                />
+                <meta property="og:title" content="양시연 2024 포트폴리오" />
+                <meta property="og:description" content="양시연 2024 프론트엔드/웹 퍼블리셔 포트폴리오" />
+                <meta
+                  property="og:url"
+                  content={`https://sirori.netlify.app/#/detail/${item.id}`}
+                />
+              </Helmet>
               <main key={item.id} className={S.detail}>
                 <div className={S.titleBox}>
                   <h2 className={S.title}>{item.title}</h2>
