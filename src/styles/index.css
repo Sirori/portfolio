@@ -59,24 +59,31 @@ button {
   align-items: center;
 }
 
-.projects .swiper .swiper-button-prev:after,
-.projects .swiper .swiper-button-next:after {
+.projects .swiper .swiper-button-prev,
+.projects .swiper .swiper-button-next {
+  width: 5%;
+  height: 50%;
+  padding: 0;
+  top: var(--swiper-navigation-top-offset, 30%);
+}
+
+.projects .swiper .swiper-button-prev::after,
+.projects .swiper .swiper-button-next::after {
+  background: url(./../assets/icon/chevron.svg) no-repeat center center /
+    contain;
   content: "";
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   left: 0;
-  z-index: 999;
 }
 
-.projects .swiper .swiper-button-prev {
-  background: url(/assets/icon/chevron.svg) no-repeat center center / contain;
+.projects .swiper .swiper-button-prev::after {
   rotate: -90deg;
 }
 
-.projects .swiper .swiper-button-next {
-  background: url(/assets/icon/chevron.svg) no-repeat center center / contain;
+.projects .swiper .swiper-button-next::after {
   rotate: 90deg;
 }
 

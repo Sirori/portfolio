@@ -10,12 +10,17 @@ import "swiper/css/pagination";
 import pb from "./../../api/pocketbase";
 import { getPbImageURL } from "./../../hooks/getPbImageURL";
 import FeatureBlock from "./../common/FeatureBlock";
+import SwiperButton from "../common/SwiperButton";
 
 function Projects() {
   const [contents, setContents] = useState([]);
 	const [status, setStatus] = useState("pending");
 	const [error, setError] = useState(null);
   const { id } = useParams();
+  const [isBeginning, setIsBeginning] = useState(true);
+	const [isEnd, setIsEnd] = useState(false);
+  const prevRef = useRef(null);
+	const nextRef = useRef(null);
 
 	useEffect(() => {
 		setStatus("loading");
@@ -35,20 +40,30 @@ function Projects() {
 			});
 	}, [id]);
 
+  const handleSlideChange = (swiper) => {
+		setIsBeginning(swiper.isBeginning);
+		setIsEnd(swiper.isEnd);
+	};
+
   return (
     <section className={`projects ${S.projects}`}>
       <h2 className={S.worksTitle}>Works</h2>
       <div className={`projectContainer ${S.projectContainer}`}>
         <h3 className={S.projectTitle}>Projects</h3>
         <Swiper 
-        className={`swiper-container ${S.swiper}`}
+        className={`mySwiper ${S.swiper}`}
         pagination={{ clickable: true }}
         navigation={{
-          prevEl: ".swiper-button-prev",
-          nextEl: ".swiper-button-next",
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+          keyboard: true,
+          onlyInViewport: false,
         }}
         loop={true}
         modules={[Navigation, Pagination]}
+        onSlideChange={(swiper) => {
+          handleSlideChange(swiper);
+        }}
         >
           {contents?.map((contentCategory)=>
             contentCategory.data?.map((item)=>(
@@ -83,8 +98,8 @@ function Projects() {
               </>
             ))
           )}
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
+          <SwiperButton className="swiper-button-prev" ref={prevRef}></SwiperButton>
+          <SwiperButton className="swiper-button-next" ref={nextRef}></SwiperButton>
         </Swiper>
       </div>
     </section>
