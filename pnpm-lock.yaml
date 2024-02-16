@@ -14,6 +14,9 @@ dependencies:
   jquery:
     specifier: ^3.7.1
     version: 3.7.1
+  mime-db:
+    specifier: ^1.52.0
+    version: 1.52.0
   pocketbase:
     specifier: ^0.20.2
     version: 0.20.2
@@ -2011,6 +2014,11 @@ packages:
 
   /microseconds@0.2.0:
     resolution: {integrity: sha512-n7DHHMjR1avBbSpsTBj6fmMGh2AGrifVV4e+WYc3Q9lO+xnSZ3NyhcBND3vzzatt05LFhoKFRxrIyklmLlUtyA==}
+    dev: false
+
+  /mime-db@1.52.0:
+    resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
+    engines: {node: '>= 0.6'}
     dev: false
 
   /minimatch@3.1.2:
