@@ -167,9 +167,9 @@
 <img width="545" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/77db1c97-e715-4c9e-aa22-8d92981f6913">
 
 - detail페이지
-<img width="541" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/559ffe82-14cb-4571-a851-cf17a8a1f618">
+<img width="572" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/d420ceef-ddd6-4eb9-9fce-76bfaea171d3">
 (타잉)
-<img width="546" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/06ff64e0-8552-4e4d-9842-527f34f6ca9b">
+<img width="570" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/d2cd9d7a-bdef-4c92-bb6f-7ced599961c5">
 (넷스파)
 
 전체적으로 pocketbase를 사용한 페이지들은 데이터를 불러오는 데에 performance 점수가 낮습니다. 더 고민하고 개선하도록 하겠습니다.
