@@ -6,24 +6,31 @@ function Header() {
     window.location.href = "mailto:이메일주소";
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
 	return (
 		<header className={S.header}>
       <nav className="text-lg">
         <ul>
           <li className={`${S.hoverCircle} fixed top-[4%] left-[3%] px-[0.5%] z-10`}>
-            <Link to="about">
+            <Link to="about" onClick={scrollToTop}>
               ABOUT
             </Link>
           </li>
           <li className="fixed top-[3%] left-1/2 -translate-x-1/2 z-50">
-            <Link to="/">
+            <Link to="/" onClick={scrollToTop}>
               <h1 className={S.logo}>
                 <span className={S.logoText}>home</span>
               </h1>
             </Link>
           </li>
           <li className={`${S.hoverCircle} fixed top-[4%] right-[3%] px-[0.5%] z-10`}>
-            <Link to="works">
+            <Link to="works" onClick={scrollToTop}>
               WORKS
             </Link>
           </li>

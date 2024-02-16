@@ -5,6 +5,13 @@ import { useInView } from "react-intersection-observer";
 
 function WhoAmI() {
   const { ref: pageRef, inView: pageIsVisible } = useInView();
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <section className={`whoAmI ${S.whoBox}`}>
       <div className={`${S.whoTextBox}`}>
@@ -16,7 +23,7 @@ function WhoAmI() {
         <div ref={pageRef} className={`${S.contentBox} ${
             pageIsVisible ? S.contentAni : ""
           }`}>
-          <Link to="about" className={S.whoMore}>
+          <Link to="about" className={S.whoMore} onClick={scrollToTop}>
             see more &#62; &#62;
           </Link>
           <p className={`${S.whoContent}`}>
