@@ -17,8 +17,6 @@ function Projects() {
 	const [status, setStatus] = useState("pending");
 	const [error, setError] = useState(null);
   const { id } = useParams();
-  const [isBeginning, setIsBeginning] = useState(true);
-	const [isEnd, setIsEnd] = useState(false);
   const prevRef = useRef(null);
 	const nextRef = useRef(null);
 
@@ -40,11 +38,6 @@ function Projects() {
 			});
 	}, [id]);
 
-  const handleSlideChange = (swiper) => {
-		setIsBeginning(swiper.isBeginning);
-		setIsEnd(swiper.isEnd);
-	};
-
   return (
     <section className={`projects ${S.projects}`}>
       <h2 className={S.worksTitle}>Works</h2>
@@ -54,16 +47,13 @@ function Projects() {
         className={`mySwiper ${S.swiper}`}
         pagination={{ clickable: true }}
         navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
           keyboard: true,
           onlyInViewport: false,
         }}
         loop={true}
         modules={[Navigation, Pagination]}
-        onSlideChange={(swiper) => {
-          handleSlideChange(swiper);
-        }}
         >
           {contents?.map((contentCategory)=>
             contentCategory.data?.map((item)=>(
@@ -98,8 +88,8 @@ function Projects() {
               </>
             ))
           )}
-          <SwiperButton className="swiper-button-prev" ref={prevRef}></SwiperButton>
-          <SwiperButton className="swiper-button-next" ref={nextRef}></SwiperButton>
+          <SwiperButton className="swiper-button-prev" ref={prevRef} />
+          <SwiperButton className="swiper-button-next" ref={nextRef} />
         </Swiper>
       </div>
     </section>
