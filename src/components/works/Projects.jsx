@@ -14,23 +14,23 @@ import SwiperButton from "../common/SwiperButton";
 
 function Projects() {
   const [contents, setContents] = useState([]);
-  const [status, setStatus] = useState('pending');
+  const [status, setStatus] = useState("pending");
   const [error, setError] = useState(null);
   const { id } = useParams();
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   useEffect(() => {
-    setStatus('loading');
+    setStatus("loading");
 
-    Promise.all([pb.collection('project').getFullList()])
+    Promise.all([pb.collection("project").getFullList()])
       .then(([project]) => {
-        setContents([{ title: '프로젝트', data: project }]);
-        setStatus('success');
+        setContents([{ title: "프로젝트", data: project }]);
+        setStatus("success");
       })
       .catch((error) => {
         setError(error);
-        setStatus('error');
+        setStatus("error");
       });
   }, [id]);
 
@@ -95,8 +95,8 @@ function Projects() {
                 </>
               ))
             )}
-            <SwiperButton className="swiper-button-prev" ref={prevRef} />
-            <SwiperButton className="swiper-button-next" ref={nextRef} />
+            <div className="swiper-button-prev" ref={prevRef} />
+            <div className="swiper-button-next" ref={nextRef} />
           </Swiper>
         )}
       </div>
