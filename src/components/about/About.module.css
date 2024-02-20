@@ -166,6 +166,17 @@
   @apply relative w-screen h-[100vh] px-[5%] py-[8%] select-none;
 }
 
+.skillsTitle {
+  @apply opacity-0;
+}
+
+.skillsTitleAni {
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
 .circleLg {
   @apply absolute left-[12%] top-[9%] bg-[#5A8076] w-[13rem] h-[13rem] rounded-full opacity-0 -z-10;
   animation-name: fadeInOpacityHalf;
@@ -179,8 +190,8 @@
 }
 
 .skillsItem {
-  @apply w-[32%] mb-[7%] p-[2%] flex flex-row items-center gap-[2rem] text-[1.25rem] opacity-0 rounded-full duration-300;
-  @apply hover:border hover:border-[#5A8076];
+  @apply w-[32%] mb-[7%] p-[2%] flex flex-row items-center gap-[2rem] text-[1.25rem] opacity-0 rounded-full duration-300 border border-[#5A8076] border-opacity-0;
+  @apply hover:border-opacity-100;
 }
 
 .imgBox {

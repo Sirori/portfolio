@@ -14,7 +14,7 @@ function Skills(){
     <section className={S.skills}>
       <h3 ref={pageRef}
       className={`${S.skillsTitle} ${
-        pageIsVisible ? S.educationTitleAni : ""
+        pageIsVisible ? S.skillsTitleAni : ""
       }`}>Skills</h3>
       <span aria-hidden ref={pageRef}
       className={`${

@@ -1,5 +1,5 @@
 .detail {
-  @apply px-[5%] py-[7%];
+  @apply px-[5%] pt-[12%] pb-[7%];
 }
 
 .titleBox {
