@@ -5,6 +5,7 @@ import FeatureBlock from "./../common/FeatureBlock";
 import pb from "./../../api/pocketbase";
 import { getPbImageURL } from "./../../hooks/getPbImageURL";
 import backIcon from "/assets/icon/backIcon.svg"
+import DetailList from "./DetailList";
 
 function Detail(){
   const handleBack = () => {
@@ -37,7 +38,7 @@ function Detail(){
     <>
       {contents?.map((contentCategory) =>
         contentCategory.data
-          .filter((item) => item.id === window.location.href.slice(-15))
+          .filter((list) => list.id === window.location.href.slice(-15))
           .map((item) => (
             <React.Fragment key={item.id}>
               <Helmet>
@@ -140,6 +141,8 @@ function Detail(){
                   </div>
                 )}
               </section>
+              <hr className="bg-slate-600 w-[90%] mx-auto" />
+              <DetailList />
           </React.Fragment>
         ))
       )}

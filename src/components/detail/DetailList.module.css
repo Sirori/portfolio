@@ -1,0 +1,42 @@
+.works {
+  @apply w-full h-auto px-[5%] py-[3%];
+}
+
+.workList {
+  @apply mx-auto w-full h-full flex flex-row justify-between gap-[2%];
+}
+
+.workItem {
+  @apply relative w-[20%] cursor-pointer;
+}
+
+.imgContainer {
+  @apply w-full h-full;
+}
+
+.activeImgContainer::after,
+.imgContainer::after {
+  @apply absolute left-1/2 top-[45%] w-[1.5rem] h-[1.5rem] opacity-0 hover:opacity-100 duration-300;
+  background: url("/assets/icon/magnifying-glass.svg") no-repeat center center /
+    contain;
+  content: "";
+  transform: translate(-50%);
+}
+
+.activeImgContainer::before,
+.imgContainer::before {
+  @apply absolute bg-black opacity-0 left-0 top-0 w-full h-full hover:opacity-70 duration-300;
+  content: "";
+}
+
+.activeImgContainer {
+  @apply border-[#8BAEA5] border-[6px];
+}
+
+/* .imgContainer {
+  @apply border-[6px] border-opacity-0;
+} */
+
+.workImg {
+  @apply w-full h-full object-cover;
+}
