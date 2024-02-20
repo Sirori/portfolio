@@ -99,48 +99,47 @@ function Detail(){
                   </div>
                 </div>
               </main>
-              
-            <hr className="bg-slate-600 w-[90%] mx-auto" />
-            <section className={`${item.detailImage2 ? S.fullSection : S.fullImg}`}>
-              <div className={`${item.detailImage2 ? S.detailContainer : S.oneFull}`}>
-                <h3 className={S.detailTitle}>
-                  {item.detailTitle.split(", ")[0]} 페이지
-                </h3>
-                <div className={S.fullImg}>
-                  <img src={getPbImageURL(item, "detailImage1")} alt={`${item.detailTitle.split(", ")[0]} 페이지`} />
-                </div>
-              </div>
-              {item.detailImage2 && (
-                <div className={S.detailContainer2}>
+              <hr className="bg-slate-600 w-[90%] mx-auto" />
+              <section className={`${item.detailImage2 ? S.fullSection : S.fullImg}`}>
+                <div className={`${item.detailImage2 ? S.detailContainer : S.oneFull}`}>
                   <h3 className={S.detailTitle}>
-                    {item.detailTitle.split(", ")[1]} 페이지
+                    {item.detailTitle.split(", ")[0]} 페이지
                   </h3>
                   <div className={S.fullImg}>
-                    <img src={getPbImageURL(item, "detailImage2")} alt={`${item.detailTitle.split(", ")[1]} 페이지`} />
+                    <img src={getPbImageURL(item, "detailImage1")} alt={`${item.detailTitle.split(", ")[0]} 페이지`} />
                   </div>
                 </div>
-              )}
-              {item.detailImage3 && (
-                <div className={S.detailContainer3}>
-                  <h3 className={S.detailTitle}>
-                    {item.detailTitle.split(", ")[2]} 페이지
-                  </h3>
-                  <div className={S.fullImg}>
-                    <img src={getPbImageURL(item, "detailImage3")} alt={`${item.detailTitle.split(", ")[2]} 페이지`} />
+                {item.detailImage2 && (
+                  <div className={S.detailContainer2}>
+                    <h3 className={S.detailTitle}>
+                      {item.detailTitle.split(", ")[1]} 페이지
+                    </h3>
+                    <div className={S.fullImg}>
+                      <img src={getPbImageURL(item, "detailImage2")} alt={`${item.detailTitle.split(", ")[1]} 페이지`} />
+                    </div>
                   </div>
-                </div>
-              )}
-              {item.detailImage4 && (
-                <div className={S.detailContainer4}>
-                  <h3 className={S.detailTitle}>
-                    {item.detailTitle.split(", ")[3]} 페이지
-                  </h3>
-                  <div className={S.fullImg}>
-                    <img src={getPbImageURL(item, "detailImage4")} alt={`${item.detailTitle.split(", ")[3]} 페이지`} />
+                )}
+                {item.detailImage3 && (
+                  <div className={S.detailContainer3}>
+                    <h3 className={S.detailTitle}>
+                      {item.detailTitle.split(", ")[2]} 페이지
+                    </h3>
+                    <div className={S.fullImg}>
+                      <img src={getPbImageURL(item, "detailImage3")} alt={`${item.detailTitle.split(", ")[2]} 페이지`} />
+                    </div>
                   </div>
-                </div>
-              )}
-            </section>
+                )}
+                {item.detailImage4 && (
+                  <div className={S.detailContainer4}>
+                    <h3 className={S.detailTitle}>
+                      {item.detailTitle.split(", ")[3]} 페이지
+                    </h3>
+                    <div className={S.fullImg}>
+                      <img src={getPbImageURL(item, "detailImage4")} alt={`${item.detailTitle.split(", ")[3]} 페이지`} />
+                    </div>
+                  </div>
+                )}
+              </section>
           </React.Fragment>
         ))
       )}

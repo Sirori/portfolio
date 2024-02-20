@@ -3,7 +3,7 @@
 }
 
 .here {
-  @apply text-[1.75rem];
+  @apply text-[2rem];
   animation-name: infiniteUpDown;
   animation-duration: 1s;
   animation-iteration-count: infinite;

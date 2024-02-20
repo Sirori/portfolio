@@ -15,7 +15,7 @@ function Footer() {
 
 	return (
 		<footer className="bg-black w-full h-screen text-center text-white py-[10%] flex flex-col overflow-hidden">
-      <p className="text-[6.5rem] mb-[5%] font-ogg">
+      <p className="text-[6.5rem] mb-[6%] font-ogg">
 				Contact me !
 			</p>
 			<span className={S.here}>
@@ -25,14 +25,14 @@ function Footer() {
 				&#62; &#62;
 			</span>
 			<ul className={S.contact}>
-				<li className="flex flex-row gap-3">
-					<img src={mailIcon} alt="" />
+				<li className="flex flex-row gap-4 text-[2rem]">
+					<img src={mailIcon} alt="이메일" className="w-auto h-full" />
 					<Link to="#" onClick={handleMailClick}>
 						tldus7519@naver.com
 					</Link>
 				</li>
-				<li className="flex flex-row gap-3">
-					<img src={phoneIcon} alt="" />
+				<li className="flex flex-row gap-4 text-[2rem]">
+					<img src={phoneIcon} alt="전화번호" className="w-auto h-full" />
 					<Link to="#" onClick={handlePhoneClick}>
 						010-8704-7519
 					</Link>
