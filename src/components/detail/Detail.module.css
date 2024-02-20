@@ -43,7 +43,7 @@
 }
 
 .fullImg {
-  @apply w-full h-auto pl-[1%] pr-[5%] py-[6%] flex flex-row justify-center;
+  @apply w-full h-auto px-[3%] py-[6%] flex flex-row justify-center;
 }
 
 .detailContainer,
