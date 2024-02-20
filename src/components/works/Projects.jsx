@@ -43,7 +43,6 @@ function Projects() {
           <Spinner />
         ) : (
           <Swiper
-            // Swiper 옵션을 아래와 같이 설정하세요.
             loop
             navigation={{
               prevEl: prevRef.current,
