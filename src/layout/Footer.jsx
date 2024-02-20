@@ -25,13 +25,13 @@ function Footer() {
 				&#62; &#62;
 			</span>
 			<ul className={S.contact}>
-				<li className="flex flex-row gap-4 text-[2rem]">
+				<li className="flex flex-row gap-4">
 					<img src={mailIcon} alt="이메일" className="w-auto h-full" />
 					<Link to="#" onClick={handleMailClick}>
 						tldus7519@naver.com
 					</Link>
 				</li>
-				<li className="flex flex-row gap-4 text-[2rem]">
+				<li className="flex flex-row gap-4">
 					<img src={phoneIcon} alt="전화번호" className="w-auto h-full" />
 					<Link to="#" onClick={handlePhoneClick}>
 						010-8704-7519
