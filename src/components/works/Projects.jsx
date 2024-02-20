@@ -45,8 +45,10 @@ function Projects() {
           <Swiper
             loop
             navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
+              // prevEl: prevRef.current,
+              // nextEl: nextRef.current,
+              prevEl: ".swiper-button-prev",
+              nextEl: ".swiper-button-next",
               keyboard: true,
               onlyInViewport: false,
             }}
@@ -95,8 +97,8 @@ function Projects() {
                 </>
               ))
             )}
-            <div className="swiper-button-prev" ref={prevRef} />
-            <div className="swiper-button-next" ref={nextRef} />
+            <SwiperButton className="swiper-button-prev" ref={prevRef} />
+            <SwiperButton className="swiper-button-next" ref={nextRef} />
           </Swiper>
         )}
       </div>
