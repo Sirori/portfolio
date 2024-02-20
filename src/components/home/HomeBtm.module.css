@@ -3,7 +3,7 @@
 }
 
 .whoTextBox {
-  @apply flex flex-col h-[80vh] w-[50%] justify-between;
+  @apply flex flex-col h-[80vh] w-[50%] justify-evenly;
 }
 
 .whoTitle {
