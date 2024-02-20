@@ -45,8 +45,6 @@ function Projects() {
           <Swiper
             loop
             navigation={{
-              // prevEl: prevRef.current,
-              // nextEl: nextRef.current,
               prevEl: ".swiper-button-prev",
               nextEl: ".swiper-button-next",
               keyboard: true,
