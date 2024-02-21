@@ -65,7 +65,7 @@ function Skills(){
           pageIsVisible ? S.skillsItemAni4 : ""
         }`}>
           <div className={S.figmaBox}>
-            <img src={xd} alt="" />
+            <img src={xd} alt="xd 로고" />
             <img src={figma} alt="figma 로고" />
           </div>
           <p>

@@ -194,12 +194,24 @@
   @apply hover:border-opacity-100;
 }
 
+.skillsItem:nth-child(4) {
+  @apply pl-0;
+}
+
 .imgBox {
-  @apply w-[20%] flex justify-evenly;
+  @apply w-[15%] flex justify-evenly;
+}
+
+.imgBox img {
+  @apply w-full h-auto;
 }
 
 .figmaBox {
-  @apply w-[30%] flex flex-row gap-[3%] justify-evenly;
+  @apply w-[35%] flex flex-row gap-[6%] justify-evenly;
+}
+
+.figmaBox img {
+  @apply w-1/3 h-auto;
 }
 
 .skillsItemAni1 {
