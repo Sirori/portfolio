@@ -165,10 +165,10 @@
 <img width="555" alt="works" src="https://github.com/Sirori/portfolio/assets/116864776/072bff2e-967a-46dd-9a60-e8dfc53748d5">
 
 - detail페이지
+- <img width="555" alt="detail_karly" src="https://github.com/Sirori/portfolio/assets/116864776/83b9d915-d703-40e5-a833-6ecef7ab05ba">
+(마켓칼리 - detail 페이지 중 가장 performance 점수가 높음)
 <img width="555" alt="detail_taing" src="https://github.com/Sirori/portfolio/assets/116864776/db184fd8-07d4-48d4-a571-1426c7d57547">
-(타잉)
-<img width="555" alt="detail_karly" src="https://github.com/Sirori/portfolio/assets/116864776/83b9d915-d703-40e5-a833-6ecef7ab05ba">
-(마켓칼리)
+(타잉 - detail 페이지 중 가장 performance 점수가 낮음)
 
 전체적으로 pocketbase를 사용한 페이지들은 데이터를 불러오는 데에 performance 점수가 낮습니다. 더 고민하고 개선하도록 하겠습니다.
 
