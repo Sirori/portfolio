@@ -1,0 +1,32 @@
+header {
+  @apply top-0 left-0 right-0 flex justify-between;
+}
+
+.logo {
+  @apply relative bg-[#8BAEA5] h-[4.5rem] w-[4.5rem] rounded-full opacity-70 duration-200;
+}
+
+.logo:hover {
+  @apply opacity-100;
+}
+
+.logoText {
+  @apply absolute top-1/2 left-1/2 opacity-0 text-lg duration-300;
+  transform: translate(-50%, -50%);
+}
+
+.logo:hover .logoText {
+  opacity: 1;
+}
+
+.hoverCircle {
+  @apply after:absolute after:top-[-15%] after:left-[-25%] after:w-[150%] after:h-[130%] after:bg-[#A2D4C7] after:py-[5%] after:rounded-full after:z-[-1] after:opacity-0 hover:after:opacity-80;
+}
+
+.hoverCircle::after {
+  transition: all 0.3s;
+}
+
+.underlineLink {
+  @apply hover:underline;
+}

@@ -1,0 +1,122 @@
+.main {
+  @apply flex flex-row items-end justify-between px-[10%] select-none h-[100vh] pb-[5%];
+}
+
+.mainImgBox {
+  @apply w-[22%];
+}
+
+.mainImg {
+  @apply object-cover w-[100%] h-auto;
+}
+
+.mainTxtBox {
+  @apply text-right font-actor text-[9rem];
+}
+
+.mainTxt {
+  @apply block opacity-0;
+}
+
+.mainTxtAni {
+  animation-duration: 1.3s;
+  animation-name: slideUp;
+  animation-fill-mode: forwards;
+}
+
+.mainTxtAni2 {
+  animation-duration: 1.3s;
+  animation-name: slideUp;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.mainTxtAni3 {
+  animation-duration: 1.3s;
+  animation-name: slideUp;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.creative {
+  @apply text-[9.5rem] text-center font-ogg leading-[12rem];
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.circleSm {
+  position: absolute;
+  content: "";
+  bottom: 24%;
+  left: 20%;
+  width: 15rem;
+  height: 15rem;
+  background: #5a8076;
+  opacity: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circleLg {
+  position: absolute;
+  content: "";
+  top: 16%;
+  right: 24%;
+  width: 23rem;
+  height: 23rem;
+  background: #5a8076;
+  opacity: 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@keyframes circleSmAni {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 50%;
+  }
+}
+
+@keyframes circleLgAni {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 80%;
+  }
+}
+
+.circleSmAni {
+  animation-duration: 1.7s;
+  animation-name: circleSmAni;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.circleLgAni {
+  animation-duration: 1.7s;
+  animation-name: circleLgAni;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
