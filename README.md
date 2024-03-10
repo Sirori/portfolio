@@ -38,7 +38,7 @@
 
 
 ### 개발 기간 :hourglass_flowing_sand:
-> 2023 . 11 . 13 ~ 2023. 2 . 8 (수정 중)
+> 2023 . 11 . 13 ~ 2023. 2 . 25 (수정 중)
 
 <br />
 
@@ -139,11 +139,9 @@
 
 
 #### works페이지
-![화면 기록 2024-02-08 오후 2 12 33](https://github.com/Sirori/portfolio/assets/116864776/d6e87d16-5572-4c1d-ac0d-b517c65bc075)
-
+![화면 기록 2024-02-25 오전 12 30 14 (1)](https://github.com/Sirori/portfolio/assets/116864776/1888359e-b546-45f3-8231-edba5a15065a)
 
 - swiper를 사용하여 작업물을 보기 편하게 구현하였습니다.
-- swiper의 coverflow 이펙트를 사용하였습니다.
 - 작업물들의 데이터는 pocketbase에서 생성하여 데이터를 불러옵니다.
 - javascript를 이용해 illustrator 이미지를 확대하여 볼 수 있도록 했습니다.
 
@@ -158,19 +156,22 @@
 
 #### lighthouse 검사
 - 메인페이지
-<img width="549" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/ac56997c-6a5c-4453-8415-07dee2977585">
+<img width="555" alt="home" src="https://github.com/Sirori/portfolio/assets/116864776/97a1ada7-1c25-4964-933d-19d2d998dc21">
 
 - about페이지
-<img width="546" alt="스크린샷 2024-02-08 오후 3 01 19" src="https://github.com/Sirori/portfolio/assets/116864776/9a6e03cd-8f92-4441-9bcd-7b8db898f53d">
+<img width="555" alt="about" src="https://github.com/Sirori/portfolio/assets/116864776/7e7fec52-df65-4088-a5e8-73a2c30c6392">
 
 - works페이지
-<img width="545" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/77db1c97-e715-4c9e-aa22-8d92981f6913">
+<img width="555" alt="works" src="https://github.com/Sirori/portfolio/assets/116864776/072bff2e-967a-46dd-9a60-e8dfc53748d5">
 
 - detail페이지
-<img width="572" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/d420ceef-ddd6-4eb9-9fce-76bfaea171d3">
-(타잉)
-<img width="570" alt="image" src="https://github.com/Sirori/portfolio/assets/116864776/d2cd9d7a-bdef-4c92-bb6f-7ced599961c5">
-(넷스파)
+<img width="555" alt="detail_karly" src="https://github.com/Sirori/portfolio/assets/116864776/83b9d915-d703-40e5-a833-6ecef7ab05ba">
+<br />
+(마켓칼리 - detail 페이지 중 가장 performance 점수가 높음)
+<br />
+<img width="555" alt="detail_taing" src="https://github.com/Sirori/portfolio/assets/116864776/db184fd8-07d4-48d4-a571-1426c7d57547">
+<br />
+(타잉 - detail 페이지 중 가장 performance 점수가 낮음)
 
 전체적으로 pocketbase를 사용한 페이지들은 데이터를 불러오는 데에 performance 점수가 낮습니다. 더 고민하고 개선하도록 하겠습니다.
 
