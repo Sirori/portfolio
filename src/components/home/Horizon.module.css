@@ -7,6 +7,9 @@
   overflow-x: scroll;
   display: flex;
   -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
   gap: 40vw;
 }
 
