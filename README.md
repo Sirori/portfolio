@@ -26,7 +26,7 @@
 >
 > #### 개요
 > - 웹 퍼블리셔/프론트엔드 취업을 위한 포트폴리오입니다.
-> React/Vue를 사용하였고, 각 페이지 내의 section을 component로 분리하였습니다.
+> Vite/React를 사용하였고, 각 페이지 내의 section을 component로 분리하였습니다.
 > pocketbase를 이용하여 작업물들의 내용을 담아 불러오는 방식을 채택하였습니다 :eyes:
 >
 > #### 디자인
