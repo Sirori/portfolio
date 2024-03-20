@@ -20,7 +20,7 @@ header {
 }
 
 .hoverCircle {
-  @apply after:absolute after:top-[-15%] after:left-[-25%] after:w-[150%] after:h-[130%] after:bg-[#A2D4C7] after:py-[5%] after:rounded-full after:z-[-1] after:opacity-0 hover:after:opacity-80;
+  @apply border border-black rounded-full px-[1%] after:absolute after:top-[0%] after:left-[0%] after:w-[100%] after:h-[100%] after:bg-[#A2D4C7] after:py-[5%] after:rounded-full after:z-[-1] after:opacity-0 hover:after:opacity-80;
 }
 
 .hoverCircle::after {
